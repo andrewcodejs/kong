@@ -1,3 +1,7 @@
+require("kong.core.globalpatches")({cli = true})
+
+math.randomseed()
+
 local pl_app = require "pl.lapp"
 local log = require "kong.cmd.utils.log"
 local meta = require "kong.meta"
